@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <h1>Grade Calculator</h1>
+    <script>
+      const mark = parseInt(prompt("Enter your mark (0-100):"));
+
+      let grade;
+
+      if (mark >= 70 && mark <= 100) {
+        grade = "A";
+      } else if (mark >= 50 && mark <= 60) {
+        grade = "C";
+      } else if (mark >= 0 && mark <= 40) {
+        grade = "F";
+      } else {
+        grade = "Invalid mark";
+      }
+
+      alert(`Your grade is: ${grade}`);
+      document.write(`<h2>Your grade is: ${grade}</h2>`);
+    </script>
+  </body>
+</html>

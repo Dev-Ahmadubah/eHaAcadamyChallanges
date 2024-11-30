@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const cars = ["toyota", "honda", "mazda", "mitsubishi", "tesla", "lexus"];
+
+      console.log("First car:", cars[0]);
+      console.log("Last car:", cars[cars.length - 1]);
+
+      cars.push("mercedes-benz");
+      console.log("Updated cars array:", cars);
+
+      console.log("All cars in the array:");
+      for (let i = 0; i < cars.length; i++) {
+        console.log(cars[i]);
+      }
+    </script>
+  </body>
+</html>
